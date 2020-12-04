@@ -1,0 +1,25 @@
+{
+  "name": "vlrondon/fizzbuzz",
+  "description": "FizzBuzz Test",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Vladimir",
+      "email": "vlrondon@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":259:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:4:{s:40:"Tests\FizzBuzzTest::testMultiplesOfThree";d:0.009;s:39:"Tests\FizzBuzzTest::testMultiplesOfFive";d:0;s:47:"Tests\FizzBuzzTest::testMultiplesOfThreeAndFive";d:0;s:37:"Tests\FizzBuzzTest::testNormalNumbers";d:0;}}}
