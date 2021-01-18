@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" />
+	<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./assets/img/apple-icon.png"
+	/>
+	<link
+			rel="stylesheet"
+			href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+	/>
+	<link
+			rel="stylesheet"
+			href="./assets/vendor/highlight/styles/stackoverflow-light.css"
+	/>
+	<link
+			rel="stylesheet"
+			href="./assets/tailwind.css"
+	/>
+	<script src="./assets/vendor/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	{% block head %}
+	<title>{% block title %}{% endblock %} - FizzBuzz</title>
+	{% endblock %}
+</head>
+<body class="text-gray-800 antialiased">
+<nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+	<div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+		<div>
+			<a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+			   href="https://github.com/vlrondon/fizzbuzz">FizzBuzz Project</a>
+			<button
+					class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+					type="button"
+					onclick="toggleNavbar('collapse-navbar')"
+			>
+				<i class="text-white fas fa-bars"></i>
+			</button>
+		</div>
+		<div
+				class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+				id="collapse-navbar"
+		>
+			<ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+				<li class="flex items-center">
+					<button
+							class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+							type="button"
+							style="transition: all 0.15s ease 0s;"
+					>
+						<i class="fas fa-arrow-alt-circle-down"></i> Download
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<main>
+	<div id="content">{% block content %}{% endblock %}</div>
+</main>
+<footer class="relative bg-gray-300 pt-8 pb-6">
+	<div
+			class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+			style="height: 80px; transform: translateZ(0px);"
+	>
+		<svg
+				class="absolute bottom-0 overflow-hidden"
+				xmlns="http://www.w3.org/2000/svg"
+				preserveAspectRatio="none"
+				version="1.1"
+				viewBox="0 0 2560 100"
+				x="0"
+				y="0"
+		>
+			<polygon
+					class="text-gray-300 fill-current"
+					points="2560 0 2560 100 0 100"
+			></polygon>
+		</svg>
+	</div>
+	<div class="container mx-auto px-4">
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-6/12 px-4 mx-auto text-center">
+				<h4 class="text-3xl font-semibold">Result between {{ from }} and {{ to }}!</h4>
+				<div class="flex flex-wrap items-top mb-6">
+					<div class="w-full lg:w-4/12 px-4 ml-auto">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="my-6 border-gray-400" />
+		<div
+				class="flex flex-wrap items-center md:justify-between justify-center"
+		>
+			<div class="w-full md:w-4/12 px-4 mx-auto text-center">
+				<div class="text-sm text-gray-600 font-semibold py-1">
+					Copyright © 2021 Developed by Chronos.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+<script>
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+</script>
+</html>
