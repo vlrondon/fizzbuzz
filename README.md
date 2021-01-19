@@ -26,6 +26,12 @@ Then to run PHPUnit, simply execute this in the root of the project.
 "./vendor/bin/phpunit.bat"
 ```
 
+Then to run Behat, simply execute this in the root of the project.
+
+```bash
+"vendor\bin\behat"
+```
+
 To show the project result open a command line and run this on the project root.
 
 ```bash
@@ -34,4 +40,4 @@ php -S localhost:8000
 
 Then open a browser and visit:
 
-http://localhost:8000/simple.php for a simple solution or http://localhost:8000/complex.php for a solution based in TDD.
+http://localhost:8000
